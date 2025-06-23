@@ -11,7 +11,7 @@ docker run -d \
         -e MYSQL_ROOT_HOST=172.17.0.1 \
         -p 3307:3306 \
 	-v ~/workbench/mariadb/data:/var/lib/mysql \
- mariadb:latest
+ mariadb:10.11
 
 echo "=> install mysql-client"
 docker exec -it mariadb-server apt update >/dev/null 2>/dev/null
